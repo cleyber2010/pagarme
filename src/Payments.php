@@ -3,7 +3,6 @@
 
 class Payments
 {
-    protected $user;
     protected $endpoint;
     protected $apiUrl;
     protected $apiKey;
@@ -11,9 +10,8 @@ class Payments
     protected $message;
     protected $callback;
 
-    public function __construct(User $user, string $apiKey)
+    public function __construct(string $apiKey)
     {
-        $this->user = $user;
         $this->apiKey = $apiKey;
         $this->apiUrl = "https://api.pagar.me";
     }
@@ -34,7 +32,7 @@ class Payments
 
         $this->endpoit = "/1/cards";
         $this->post();
-
+        
         if (!$this->callback->valid) {
             $this->message = "O cartão informado não é valido";
             return null;

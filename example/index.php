@@ -10,10 +10,10 @@ $user->bootstrap(
     "098980980"
 );
 
-$pay = new Payments($user, "ak_test_X3C8TFSQgiyW2gaVgSjNEXsAITA6aQ");
+$pay = new Payments("sua_apiKey");
 
 $pay->creditCard(
-    "Cleyber Matos", 
+    $user->first_name, 
     "5308 0842 4204 2820",
     "1122",
     "416"
