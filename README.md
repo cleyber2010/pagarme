@@ -3,12 +3,6 @@ da Pagar.me
 
 Você pode saber mais **[clicando aqui](https://www.linkedin.com/in/cleyber-matos/)**.
 
-### Highlights
-
-- Simple installation (Instalação simples)
-- Abstraction of all API methods (Abstração de todos os métodos da API)
-- Easy authentication with login and password (Fácil autenticação com login e senha)
-- Composer ready and PSR-2 compliant (Pronto para o composer e compatível com PSR-2)
 
 ## Documentation
 
