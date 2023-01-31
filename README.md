@@ -21,8 +21,8 @@ require __DIR__ . "/../src/User.php";
 // Create user
 $user =  new User();
 $user->bootstrap(
-    "Cleyber", 
-    "Matos",
+    "Nome", 
+    "Sobrenome",
     "098980980"
 );
 
@@ -31,7 +31,7 @@ $pay = new Payments($user, "sua api_key");
 
 // Create new credit card
 $pay->creditCard(
-    "Cleyber Matos", 
+    "Nome Sobrenome", 
     "5308 0842 4204 2820",
     "1122",
     "416"
